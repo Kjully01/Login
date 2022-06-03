@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment"
+    tools:context=".RegistrationFragment"
     android:padding="32dp">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:style="@style/title"
-        android:text="@string/login_title"
+        android:text="@string/registration_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,53 +20,70 @@
         android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_description"
+        android:text="@string/registration_description"
         android:style="@style/text"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitleRegistration"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="115dp"
+        android:hint="@string/name"
+        style="@style/text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescription"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etCPF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/cpf"
+        style="@style/text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etEmail"/>
+        app:layout_constraintTop_toBottomOf="@id/etName"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/city"
+        style="@style/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCPF"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/country"
+        style="@style/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCity"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Login"
+        android:text="@string/cont"
         android:textColor="@color/white"
         android:fontFamily="@font/varela_round"
         android:layout_marginHorizontal="40dp"
         android:background="@drawable/custom_button"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintEnd_toEndOf="@id/etPassword"
-        app:layout_constraintStart_toStartOf="@id/etPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/etCountry"
+        app:layout_constraintEnd_toEndOf="@id/etCountry"
+        app:layout_constraintStart_toStartOf="@id/etCountry"/>
 
-    <TextView
-        android:id="@+id/tvSingUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/createAccount"
-        android:layout_marginTop="16dp"
-        style="@style/createAccount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,10 +3,29 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="menu_title">Olá!</string>
-    <string name="menu_description">Bem vindo ao mais novo aplicativo...</string>
+    <string name="menu_description">Bem vindo ao mais novo aplicativo…</string>
 
     <string name="login_title">Bem Vindo!</string>
     <string name="login_description">Faça seu login para continuar</string>
-
     <string name="createAccount">Criar uma conta</string>
+
+    <string name="registration_title">Vamos Começar!</string>
+    <string name="registration_description">Preencha os dados para criar sua conta</string>
+
+    <string name="registration_login_title">Últimos Passos</string>
+    <string name="registration_login_description">Preencha os dados para seu acesso</string>
+
+    <string name="confirm_title">Confirme seus dados</string>
+
+    <string name="signup">Cadastrar</string>
+    <string name="cont">Continuar</string>
+    <string name="login">Login</string>
+
+    <string name="name">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="city">Cidade</string>
+    <string name="country">País</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+
 </resources>

@@ -26,6 +26,13 @@
         <item name="android:textColor">@color/color_default</item>
     </style>
 
+    <style name="textConfirm">
+        <item name="android:fontFamily">@font/varela_round</item>
+        <item name="android:textColor">@color/color_default</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
     <style name="styleEditText">
         <item name="colorControlNormal">#E6FF0000</item>
         <item name="colorControlActivated">#FAFF0000</item>
