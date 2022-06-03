@@ -3,4 +3,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="menu_title">Olá!</string>
+    <string name="menu_description">Bem vindo ao mais novo aplicativo...</string>
+
+    <string name="login_title">Bem Vindo!</string>
+    <string name="login_description">Faça seu login para continuar</string>
+
+    <string name="createAccount">Criar uma conta</string>
 </resources>
