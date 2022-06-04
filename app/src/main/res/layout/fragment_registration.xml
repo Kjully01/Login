@@ -33,6 +33,7 @@
         android:layout_marginTop="115dp"
         android:hint="@string/name"
         style="@style/text"
+        android:singleLine="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescription"/>
@@ -43,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/cpf"
+        android:singleLine="true"
         style="@style/text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/city"
+        android:singleLine="true"
         style="@style/text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,10 +68,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/country"
+        android:singleLine="true"
         style="@style/text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etCity"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textError"
+        android:text="@string/message_error"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/etCountry"
+        app:layout_constraintTop_toBottomOf="@id/etCountry" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnContinue"

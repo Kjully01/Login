@@ -27,10 +27,16 @@ class LoginFragment : Fragment() {
     }
 
     private fun listener(){
-        binding.btnLogin.setOnClickListener{
-            findNavController().navigate(
-                LoginFragmentDirections.actionLoginFragmentToHomeFragment()
-            )
+        binding.run {
+            btnLogin.setOnClickListener{
+                if(etEmail.text.toString().isNotEmpty() && etPassword.text.toString().isNotEmpty()) {
+                    findNavController().navigate(
+                        LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+                    )
+                } else {
+                    tvError.visibility = View.VISIBLE
+                }
+            }
         }
 
         binding.tvSingUp.setOnClickListener{

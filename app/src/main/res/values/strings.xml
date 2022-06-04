@@ -27,5 +27,7 @@
     <string name="country">País</string>
     <string name="email">Email</string>
     <string name="password">Senha</string>
+    <string name="message_error_login">Email ou senha incorretos</string>
+    <string name="message_error">Preencha todos os campos</string>
 
 </resources>

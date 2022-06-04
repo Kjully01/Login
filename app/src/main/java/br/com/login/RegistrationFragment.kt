@@ -27,10 +27,21 @@ class RegistrationFragment : Fragment() {
     }
 
     private fun listener(){
-        binding.btnContinue.setOnClickListener{
-            findNavController().navigate(
-                RegistrationFragmentDirections.actionRegistrationFragmentToRegistrationLoginFragment()
-            )
+        binding.run {
+            btnContinue.setOnClickListener{
+                val name = etName.text.toString().isNotEmpty()
+                val cpf = etCPF.text.toString().isNotEmpty()
+                val city = etCity.text.toString().isNotEmpty()
+                val country = etCountry.text.toString().isNotEmpty()
+
+                if(name && cpf && city && country) {
+                    findNavController().navigate(
+                        RegistrationFragmentDirections.actionRegistrationFragmentToRegistrationLoginFragment()
+                    )
+                } else {
+                    tvError.visibility = View.VISIBLE
+                }
+            }
         }
     }
 

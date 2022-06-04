@@ -11,4 +11,5 @@
     <color name="color_default">#370978</color>
     <color name="color_link">#007CFF</color>
     <color name="border_grey">#80B0BDB4</color>
+    <color name="textError">#FF0000</color>
 </resources>

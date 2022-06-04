@@ -1,10 +1,10 @@
 package br.com.login
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import br.com.login.databinding.FragmentRegistrationLoginBinding
 
@@ -27,10 +27,18 @@ class RegistrationLoginFragment : Fragment() {
     }
 
     private fun listener(){
-        binding.btnRegistration.setOnClickListener{
-            findNavController().navigate(
-                RegistrationLoginFragmentDirections.actionRegistrationLoginFragmentToConfirmationFragment()
-            )
+        binding.run {
+            btnRegistration.setOnClickListener {
+                if (etEmail.text.toString().isNotEmpty() && etPassword.text.toString()
+                        .isNotEmpty()
+                ) {
+                    findNavController().navigate(
+                        RegistrationLoginFragmentDirections.actionRegistrationLoginFragmentToConfirmationFragment()
+                    )
+                } else {
+                    tvError.visibility = View.VISIBLE
+                }
+            }
         }
     }
 
