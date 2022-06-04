@@ -44,7 +44,7 @@ class ConfirmationFragment : Fragment() {
     private fun listener(){
         binding.btnConfirm.setOnClickListener{
             findNavController().navigate(
-                ConfirmationFragmentDirections.actionConfirmationFragmentToHomeFragment2()
+                ConfirmationFragmentDirections.actionConfirmationFragmentToHomeFragment2(args.email)
             )
         }
     }

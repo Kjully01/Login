@@ -31,7 +31,7 @@ class LoginFragment : Fragment() {
             btnLogin.setOnClickListener{
                 if(etEmail.text.toString().isNotEmpty() && etPassword.text.toString().isNotEmpty()) {
                     findNavController().navigate(
-                        LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+                        LoginFragmentDirections.actionLoginFragmentToHomeFragment(etEmail.text.toString())
                     )
                 } else {
                     tvError.visibility = View.VISIBLE
