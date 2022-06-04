@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_title">Hello!</string>
+    <string name="menu_description">Welcome the new app…</string>
+
+    <string name="welcome_title">Welcome!</string>
+    <string name="login_description">Sign in to continue</string>
+    <string name="createAccount">Create Account</string>
+
+    <string name="registration_title">Let\'s Go!</string>
+    <string name="registration_description">Create a new account</string>
+
+    <string name="registration_login_title">Last Steps</string>
+    <string name="registration_login_description">Fill in your data</string>
+
+    <string name="confirm_title">Confirm your data</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="cont">Continue</string>
+    <string name="login">Login</string>
+
+    <string name="name">Name</string>
+    <string name="cpf">CPF</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_error_login">Incorrect email or password</string>
+    <string name="message_error">Fill in all fields</string>
+
+</resources>

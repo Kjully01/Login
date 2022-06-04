@@ -90,9 +90,5 @@
         android:id="@+id/homeFragment"
         android:name="br.com.login.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <argument
-            android:name="email"
-            app:argType="string" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
 </navigation>

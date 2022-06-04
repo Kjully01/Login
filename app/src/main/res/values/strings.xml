@@ -5,7 +5,7 @@
     <string name="menu_title">Olá!</string>
     <string name="menu_description">Bem vindo ao mais novo aplicativo…</string>
 
-    <string name="login_title">Bem Vindo!</string>
+    <string name="welcome_title">Bem Vindo!</string>
     <string name="login_description">Faça seu login para continuar</string>
     <string name="createAccount">Criar uma conta</string>
 
