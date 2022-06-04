@@ -46,6 +46,18 @@
         <action
             android:id="@+id/action_registrationLoginFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="cpf"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="country"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment"
@@ -55,6 +67,24 @@
         <action
             android:id="@+id/action_confirmationFragment_to_homeFragment2"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="cpf"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="country"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"

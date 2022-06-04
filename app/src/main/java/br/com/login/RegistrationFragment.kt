@@ -29,14 +29,14 @@ class RegistrationFragment : Fragment() {
     private fun listener(){
         binding.run {
             btnContinue.setOnClickListener{
-                val name = etName.text.toString().isNotEmpty()
-                val cpf = etCPF.text.toString().isNotEmpty()
-                val city = etCity.text.toString().isNotEmpty()
-                val country = etCountry.text.toString().isNotEmpty()
+                val name = etName.text.toString()
+                val cpf = etCPF.text.toString()
+                val city = etCity.text.toString()
+                val country = etCountry.text.toString()
 
-                if(name && cpf && city && country) {
+                if(name.isNotEmpty() && cpf.isNotEmpty() && city.isNotEmpty() && country.isNotEmpty()) {
                     findNavController().navigate(
-                        RegistrationFragmentDirections.actionRegistrationFragmentToRegistrationLoginFragment()
+                        RegistrationFragmentDirections.actionRegistrationFragmentToRegistrationLoginFragment(name, cpf, city, country)
                     )
                 } else {
                     tvError.visibility = View.VISIBLE
