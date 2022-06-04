@@ -38,11 +38,6 @@
         <item name="android:textColor">@color/textError</item>
     </style>
 
-    <style name="styleEditText">
-        <item name="colorControlNormal">#E6FF0000</item>
-        <item name="colorControlActivated">#FAFF0000</item>
-    </style>
-
     <style name="createAccount">
         <item name="android:fontFamily">@font/varela_round</item>
         <item name="android:textColor">@color/color_link</item>
