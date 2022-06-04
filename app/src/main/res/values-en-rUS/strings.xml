@@ -13,9 +13,9 @@
     <string name="registration_description">Create a new account</string>
 
     <string name="registration_login_title">Last Steps</string>
-    <string name="registration_login_description">Fill in your data</string>
+    <string name="registration_login_description">Fill in your details</string>
 
-    <string name="confirm_title">Confirm your data</string>
+    <string name="confirm_title">Confirm your details</string>
 
     <string name="signup">Sign Up</string>
     <string name="cont">Continue</string>
