@@ -29,5 +29,6 @@
     <string name="password">Senha</string>
     <string name="message_error_login">Email ou senha incorretos</string>
     <string name="message_error">Preencha todos os campos</string>
+    <string name="cancel">Cancelar</string>
 
 </resources>

@@ -47,6 +47,12 @@ class ConfirmationFragment : Fragment() {
                 ConfirmationFragmentDirections.actionConfirmationFragmentToHomeFragment2()
             )
         }
+
+        binding.btnCancel.setOnClickListener {
+            findNavController().navigate(
+                ConfirmationFragmentDirections.actionConfirmationFragmentToMenuFragment()
+            )
+        }
     }
 
 }

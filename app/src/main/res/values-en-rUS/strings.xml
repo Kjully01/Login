@@ -29,5 +29,6 @@
     <string name="password">Password</string>
     <string name="message_error_login">Incorrect email or password</string>
     <string name="message_error">Fill in all fields</string>
+    <string name="cancel">Cancel</string>
 
 </resources>

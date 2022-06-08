@@ -85,6 +85,9 @@
         <argument
             android:name="password"
             app:argType="string" />
+        <action
+            android:id="@+id/action_confirmationFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
